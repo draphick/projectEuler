@@ -1,7 +1,7 @@
-#!/usr/bin/python3
+#! python
+import numpy
 
-
-def largestPrimeNumber():
+def largestPrimeNumber(findnum):
     """
         The prime factors of 13195 are 5, 7, 13 and 29.
         What is the largest prime factor of the number 600851475143 ?
@@ -16,5 +16,15 @@ def largestPrimeNumber():
         25 ÷ 5 = 5; save 5
         5 ÷ 5 = 1; save 5
     """
+    primefactors = []
+    for i in range(2,int(findnum/2 + 1)):
+        if findnum % i == 0:
+            primefactors.append(i)
+            continue
+        if numpy.prod(primefactors) == findnum:
+            break
+             
+    print(primefactors)
 
-largestPrimeNumber()
+largestPrimeNumber(13195)
+largestPrimeNumber(600851475143)
