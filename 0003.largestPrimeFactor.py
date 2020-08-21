@@ -20,11 +20,9 @@ def largestPrimeNumber(findnum):
     for i in range(2,int(findnum/2 + 1)):
         if findnum % i == 0:
             primefactors.append(i)
-            continue
         if numpy.prod(primefactors) == findnum:
             break
-             
-    print(primefactors)
+    print(primefactors[-1])
 
 largestPrimeNumber(13195)
 largestPrimeNumber(600851475143)
