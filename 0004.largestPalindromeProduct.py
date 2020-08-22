@@ -9,6 +9,14 @@ def largestPalindrome():
 
     """
    
+    answer = 0
 
+    for i in range(100,1000)[::-1]:
+        for x in range(100,1000)[::-1]: 
+            product = i * x 
+            if str(product) == str(product)[::-1]:
+                if product > answer:
+                    answer = product
+    print(answer)
 largestPalindrome()
 
