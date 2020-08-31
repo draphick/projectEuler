@@ -14,7 +14,7 @@ def thousand():
     """
     for a in range(1,1000):
         for b in range(1,1000):
-            if a != b and a < b:
+            if a < b:
                 total = a ** 2 + b ** 2 
                 c = sqrt(total)
                 newtotal = sum([a,b,c])
