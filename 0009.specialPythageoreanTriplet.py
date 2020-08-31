@@ -1,7 +1,6 @@
 from math import sqrt
-from functools import reduce
 
-def thirteenth():
+def thousand():
     """
         A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
@@ -29,6 +28,6 @@ def thirteenth():
                         break
             else:
                 pass
-thirteenth()
+thousand()
 
  
